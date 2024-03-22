@@ -1,0 +1,20 @@
+.header {
+    background-color: rgb(113, 113, 205);
+    padding: 1em;
+    display: flex;
+}
+.heading{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: "Calistoga", cursive;
+    letter-spacing: 0.04em;
+}
+.go-back {
+    margin-left: auto; /* Pushes the element to the right corner */
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}

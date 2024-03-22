@@ -1,0 +1,11 @@
+<div *ngIf="!isLoading" class="repo-list-wrapper">
+    <div class="repo-card-wrapper">
+        <div *ngFor="let data of dataList" class="repo-card-div">
+            <app-repo-card [repo]="data"></app-repo-card>
+        </div>
+    </div>
+
+    <app-pagination-component [length]="length" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions"
+        (handleChange)="handleChange($event)"></app-pagination-component>
+</div>
+<app-loader *ngIf="isLoading"/>

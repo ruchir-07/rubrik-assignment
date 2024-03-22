@@ -1,0 +1,47 @@
+/* Generic Styling */
+@mixin columnRowFlexStyling {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.coilumn-flex-styling {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.user-stats-wrapper {
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: .0178571429em;
+  width: 100%;
+}
+
+.stat-card-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  gap: 1em;
+
+  /* Apply equal margin and padding for follower and following sections in the first row */
+  .follower,
+  .following {
+    margin: 10px; /* Adjust as needed */
+    padding: 10px; /* Adjust as needed */
+  }
+
+  /* Apply perfect margin and padding for repo in the second row */
+  .repo {
+    margin: 0; /* Adjust as needed */
+    padding: 0; /* Adjust as needed */
+  }
+}
